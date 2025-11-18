@@ -1,0 +1,449 @@
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Large Tablets and Small Laptops (1024px and below) */
+@media (max-width: 1024px) {
+    /* Header adjustments */
+    header {
+        padding: 30px 60px 20px;
+    }
+    
+    nav a {
+        font-size: 1.2em;
+        margin-left: 25px;
+    }
+    
+    .theme-toggle {
+        margin-left: 30px;
+        font-size: 1.4em;
+    }
+    
+    /* Hero section */
+    .hero {
+        padding: 40px 60px 20px;
+    }
+    
+    .hero-content {
+        gap: 40px;
+    }
+    
+    .profile-image img {
+        width: 350px;
+        height: 350px;
+    }
+    
+    .intro-text h1 {
+        font-size: 2.8em;
+    }
+    
+    .intro-text .role {
+        font-size: 1.6em;
+    }
+    
+    /* About section */
+    .about-container {
+        gap: 40px;
+    }
+    
+    .about-left img {
+        width: 350px;
+        height: 370px;
+    }
+    
+    /* Experience section */
+    .experience-container {
+        gap: 30px;
+    }
+    
+    .experience-card {
+        padding: 40px;
+    }
+    
+    /* Projects section */
+    .projects-container {
+        max-width: 900px;
+    }
+    
+    .project-card {
+        flex: 1 1 250px;
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    /* Header - stack navigation */
+    header {
+        padding: 25px 30px 15px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    nav {
+        gap: 15px;
+    }
+    
+    nav a {
+        margin-left: 20px;
+        font-size: 1.1em;
+    }
+    
+    .theme-toggle {
+        margin-left: 25px;
+        position: absolute;
+        top: 25px;
+        right: 30px;
+    }
+    
+    /* Hero section - stack content */
+    .hero {
+        padding: 30px 20px;
+        height: auto;
+        min-height: 80vh;
+    }
+    
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .profile-image img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .intro-text h1 {
+        font-size: 2.5em;
+    }
+    
+    .intro-text .role {
+        font-size: 1.4em;
+    }
+    
+    /* About section - stack content */
+    .about {
+        padding: 60px 20px;
+    }
+    
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .about-left img {
+        width: 300px;
+        height: 320px;
+    }
+    
+    .about-right {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .about-cards {
+        flex-direction: column;
+    }
+    
+    /* Experience section - stack cards */
+    .experience {
+        padding: 60px 20px;
+    }
+    
+    .experience-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .experience-card {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    /* Projects section - single column */
+    .projects {
+        padding: 60px 20px;
+    }
+    
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .project-card {
+        width: 100%;
+        max-width: 400px;
+        min-height: 400px;
+    }
+    
+    /* Contact section */
+    .contact {
+        min-height: 60vh;
+        padding: 40px 20px;
+    }
+    
+    .contact h2 {
+        font-size: 3em;
+    }
+    
+    .contact-info-upper-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .contact-button {
+        width: 250px;
+    }
+    
+    /* Footer */
+    footer nav .nav-links-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    /* Header */
+    header {
+        padding: 20px 15px 15px;
+    }
+    
+    nav {
+        gap: 10px;
+    }
+    
+    nav a {
+        margin-left: 15px;
+        font-size: 1em;
+    }
+    
+    .theme-toggle {
+        top: 20px;
+        right: 15px;
+        font-size: 1.3em;
+    }
+    
+    .logo {
+        font-size: 1.5em;
+    }
+    
+    /* Hero section */
+    .hero {
+        padding: 20px 15px;
+    }
+    
+    .profile-image img {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .intro-text h1 {
+        font-size: 2em;
+    }
+    
+    .intro-text .role {
+        font-size: 1.2em;
+    }
+    
+    .actions {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .actions button {
+        width: 200px;
+    }
+    
+    /* About section */
+    .about {
+        padding: 40px 15px;
+    }
+    
+    .about h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+    
+    .about-left img {
+        width: 250px;
+        height: 270px;
+    }
+    
+    .about-card {
+        padding: 20px;
+    }
+    
+    /* Experience section */
+    .experience {
+        padding: 40px 15px;
+    }
+    
+    .experience h2 {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+    
+    .experience-card {
+        padding: 30px 20px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    /* Projects section */
+    .projects {
+        padding: 40px 15px;
+    }
+    
+    .projects h2 {
+        font-size: 2em;
+    }
+    
+    .project-card {
+        min-height: 380px;
+        padding: 15px;
+    }
+    
+    .project-card img {
+        height: 140px;
+    }
+    
+    /* Contact section */
+    .contact {
+        padding: 30px 15px;
+    }
+    
+    .contact h2 {
+        font-size: 2.5em;
+        margin-bottom: 30px;
+    }
+    
+    .contact-button {
+        width: 220px;
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 30px 15px;
+    }
+    
+    footer nav .nav-links-container {
+        gap: 12px;
+    }
+    
+    footer nav a {
+        font-size: 1em;
+    }
+    
+    /* Scroll arrows */
+    .scroll-arrow,
+    .scroll-up-arrow {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .scroll-arrow img,
+    .scroll-up-arrow img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* Very Small Mobile Devices (360px and below) */
+@media (max-width: 360px) {
+    /* Header */
+    nav a {
+        margin-left: 12px;
+        font-size: 0.9em;
+    }
+    
+    .logo {
+        font-size: 1.3em;
+    }
+    
+    /* Hero section */
+    .profile-image img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .intro-text h1 {
+        font-size: 1.8em;
+    }
+    
+    .intro-text .role {
+        font-size: 1.1em;
+    }
+    
+    .actions button {
+        width: 180px;
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+    
+    .social-links a {
+        font-size: 1.5em;
+        width: 35px;
+        height: 35px;
+    }
+    
+    /* About section */
+    .about-left img {
+        width: 200px;
+        height: 220px;
+    }
+    
+    .about-card {
+        padding: 15px;
+    }
+    
+    /* Contact section */
+    .contact-button {
+        width: 200px;
+    }
+}
+
+/* Fix for viewport height on mobile browsers */
+@media (max-height: 700px) and (max-width: 768px) {
+    .hero {
+        min-height: 90vh;
+    }
+    
+    .about,
+    .experience {
+        min-height: auto;
+        padding: 40px 20px;
+    }
+}
+
+/* Landscape orientation for mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        min-height: 100vh;
+        padding: 20px;
+    }
+    
+    .hero-content {
+        flex-direction: row;
+        gap: 20px;
+    }
+    
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .intro-text h1 {
+        font-size: 1.8em;
+    }
+    
+    .social-links {
+        margin-top: 8px;
+    }
+}
