@@ -1,0 +1,204 @@
+/* Basic Reset and Font Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.7em;
+    font-weight: 400;
+}
+
+nav a {
+    margin-left: 35px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: color 0.3s, transform 0.3s;
+    
+    /* Underline and Position setup */
+    position: relative;
+    display: inline-block;
+    padding: 8px 0;
+    margin-bottom: -5px;
+}
+
+/* The hover effect logic */
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transition: width 0.3s ease-out;
+}
+
+nav a:hover {
+    color: #000;
+    /* Simulate boldness using text-shadow to prevent horizontal layout shift */
+    text-shadow: 0.2px 0 0 currentColor;
+    
+    /* Pop-up effect: Lift element up by 3px */
+    transform: translateY(-3px);
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    padding: 20px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* Profile Image */
+.profile-image img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro Text */
+.intro-text .greeting {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 5px;
+    font-weight: 600; /* Made the text bold */
+    text-align: center; /* Centered the text */
+    width: 100%; /* Ensures it takes up full width for centering */
+}
+
+/* Intro Text container needs adjustment for centering */
+.intro-text {
+    /* Ensures internal elements can be centered if they are blocks */
+    display: flex; 
+    flex-direction: column;
+    align-items: center; /* Centers h1, p, buttons horizontally */
+    text-align: center; /* Backup alignment for text */
+}
+
+.intro-text h1 {
+    font-size: 3.2em;
+    margin: 0 0 10px 0;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+.intro-text .role {
+    font-size: 1.4em;
+    color: #555;
+    font-weight: 500;
+}
+
+/* Buttons */
+.actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.actions button {
+    padding: 12px 25px;
+    border: 1px solid #333;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: 600;
+}
+
+.download-cv {
+    background-color: white;
+    color: #333;
+}
+
+.contact-info {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.download-cv:hover {
+    background-color: #f0f0f0;
+}
+
+.contact-info:hover {
+    background-color: #333;
+}
+
+/* Social Links */
+.social-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    font-size: 1.7em;
+    color: black;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: color 0.3s, background-color 0.3s;
+    
+    /* Ensure no text-decoration is inherited or applied */
+    text-decoration: none; 
+    
+    /* Remove relative positioning and padding/margin that supports the main nav underline */
+    position: static;
+    padding: 0;
+    margin: 0;
+}
+
+/* Ensure the pseudo-element for the underline is not created for social links */
+.social-links a::after {
+    content: none;
+}
+
+.social-links a:hover {
+    color: #0077b5;
+    /* Reset transform if it was inherited, focusing only on color change for social icons */
+    transform: none; 
+}
