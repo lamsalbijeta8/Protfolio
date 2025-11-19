@@ -1,18 +1,31 @@
 document.addEventListener('DOMContentLoaded', () => {
     console.log("Welcome to Aayush's Portfolio!");
 
-    // Download CV Button Functionality
+    // Download CV Button Functionality 
     const downloadCVButton = document.querySelector('.download-cv');
+    
     downloadCVButton.addEventListener('click', () => {
         console.log('Download CV process initiated.');
+        
+       
+        const link = document.createElement('a');
+        link.href = 'assets/resume.pdf';
+        link.download = 'Aayush-Koirala_Resume.pdf'; // Custom filename for download
+        
+        
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        
+        console.log('CV download completed');
     });
 
-    // Contact Info Button Functionality (UPDATED FOR SMOOTH SCROLL)
+    // Contact Info Button Functionality 
     const contactInfoButton = document.querySelector('.contact-info');
     const contactSection = document.querySelector('#contact'); // Make sure this is still defined
     
     contactInfoButton.addEventListener('click', () => {
-        // Scroll smoothly to the #contact section
+        // Scroll smoothly 
         if (contactSection) {
             contactSection.scrollIntoView({
                 behavior: 'smooth'
@@ -22,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Arrow visibility logic
+    
     const scrollUpArrow = document.querySelector('.scroll-up-arrow');
     // Note: contactSection is now defined globally for the DOMContentLoaded scope
 
